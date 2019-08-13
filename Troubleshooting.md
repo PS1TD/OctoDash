@@ -1,5 +1,3 @@
-# Troubleshooting
-
 All known issues, that you may encounter are listed here, a fix, if present, will also be listed here. If you an get an issue or error, that isn't listed here please open a [new issue].(https://github.com/UnchartedBull/OctoDash/issues/new)
 
 ## Table of Contents
