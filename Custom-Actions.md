@@ -64,7 +64,3 @@ Any Hex Color will work here (please include the `#` upfront). If you want to us
 "color": "#f5f6fa",
 ...
 ```
-
-## Troubleshooting
-
-If you have any issues - open an issue. Please describe the problem very specific and the steps to reproduce, as an error in this component might be very specific to your case! Attach any pictures / screenshots you can take!
