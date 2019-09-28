@@ -27,7 +27,7 @@ If you want to execute GCode just put the commands inside the `command` attribut
 
 ### Predefined Actions
 
-OctoDash supports 6 predefined actions, which aren't achievable with GCode. Please copy and paste the complete Action command attribute to prevent any spelling mistakes. The brackets and exclamation mark need to be copied as well. These commands will be executed even while you're printing and most likely will cancel your print.
+OctoDash supports 7 predefined actions, which aren't achievable with GCode. Please copy and paste the complete Action command attribute to prevent any spelling mistakes. The brackets and exclamation mark need to be copied as well. These commands will be executed even while you're printing and most likely will cancel your print.
 
 - `"command": "[!STOPDASHBOARD]"` - Stops OctoDash and closes the window
 - `"command": "[!DISCONNECT]"` - Disconnects OctoPrint from the printer
@@ -35,10 +35,15 @@ OctoDash supports 6 predefined actions, which aren't achievable with GCode. Plea
 - `"command": "[!SHUTDOWN]"` - Shuts down the Raspberry Pi
 - `"command": "[!REBOOT]"` - Reboots the Raspberry Pi
 - `"command": "[!KILL]"` - Nothing special yet, executes [!SHUTDOWN]
+- `"command": "[!WEB]<website>"` - Opens the specified webpage in a fullscreen iFrame Window
 
 ```
 ...
 "command": "[!RELOAD]",
+...
+-- or --
+...
+"command": "[!WEB]http://localhost:5000",
 ...
 ```
 
