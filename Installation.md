@@ -4,7 +4,10 @@ You can install OctoDash [automatic](#automatic-installation) with a script or [
 
 The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
 
-Please make sure to remove the DisplayLayerProgress plugin, if you have it installed, as the scripts install a custom version, which can be used with OctoDash.
+OctoPrint will install the following plugins by default:
+
+- [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) - mandatory
+- [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) - optional, will greatly improve TimePredictions can be enabled via the `--ptg` flag
 
 ### With automatic start on boot
 
@@ -13,13 +16,10 @@ Please make sure to remove the DisplayLayerProgress plugin, if you have it insta
 wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.sh | bash -s -- --ptg
 ```
 
-If you don't want to install PrintTimeGenius (which is highly recommended as it will improve print time predictions dramatically) just remove the part behind bash (`-s -- --ptg`), this will the skip the installation of 
-
 ### Without automatic start on boot
 ```
 wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install-no-autostart.sh | bash -s -- --ptg
 ```
-(you can remove the --ptg flag just like above to skip installing Print Time Genius)
 ## Manual Installation
 You need to install the DisplayLayerProgress Plugin by OllisGit to enable the full functionality of OctoDash. The API is currently not in the final plugin, so please install the plugin with the following link: https://github.com/UnchartedBull/OctoPrint-DisplayLayerProgress/archive/master.zip.
 
