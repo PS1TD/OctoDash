@@ -4,9 +4,13 @@ You can install OctoDash [automatic](#automatic-installation) with a script or [
 
 The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
 
+*mandatory does not mean, that you will need these plugins 100%. If you choose not to install them some features may not work and some errors might be thrown. I can't and won't fix errors related to missing plugins. If you really want to get rid of a plugin in that list please create a PR with a working alternative. Thanks!*
+
 OctoPrint will install the following plugins by default:
 
 - [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) - mandatory
+- [Preheat Button](https://plugins.octoprint.org/plugins/preheat/) - mandatory
+- [Enclosure](https://plugins.octoprint.org/plugins/enclosure/) - mandatory
 - [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) - optional, will greatly improve TimePredictions can be enabled via the `--ptg` flag
 
 ### With automatic start on boot
