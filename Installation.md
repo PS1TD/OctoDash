@@ -10,7 +10,7 @@ OctoPrint will install the following plugins by default:
 
 - [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) - mandatory
 - [Preheat Button](https://plugins.octoprint.org/plugins/preheat/) - mandatory
-- [Enclosure](https://plugins.octoprint.org/plugins/enclosure/) - mandatory
+- [Enclosure](https://plugins.octoprint.org/plugins/enclosure/) - optional, supports display of a temperature at the bottom of the screen
 - [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) - optional, will greatly improve TimePredictions can be enabled via the `--ptg` flag
 
 ### With automatic start on boot
