@@ -22,13 +22,13 @@ Wait an hour until your Rate Limit gets reset.
 #### Problem
 You are getting several errors during the installation of OctoDash.
 #### Fix
-Please update your software to the newest version first and try reinstalling. If that does not fix the errors, please open a [new issue](https://github.com/UnchartedBull/OctoDash/issues/new).
+Please update your software to the newest version first and try reinstalling. If that does not fix the errors, please open a [new issue](https://github.com/UnchartedBull/OctoDash/issues/new?assignees=UnchartedBull&labels=bug&template=bug_report.md&title=).
 
 ### not starting automatically
 #### Problem
 OctoDash is not starting automatically, even though you installed it via the normal script.
 #### Fix
-Make sure you are logged in (auto-login can be enabled with the [rasp-config](https://www.opentechguides.com/how-to/article/raspberry-pi/134/raspbian-jessie-autologin.html) tool. If that does not fix the issue make sure you can start OctoDash via the command `octodash` (you may need to execute `ratpoison` beforehand). If all of this fails please open a [new issue](https://github.com/UnchartedBull/OctoDash/issues/new).
+Make sure you are logged in (auto-login can be enabled with the [rasp-config](https://www.opentechguides.com/how-to/article/raspberry-pi/134/raspbian-jessie-autologin.html) tool. If that does not fix the issue make sure you can start OctoDash via the command `octodash` (you may need to execute `ratpoison` beforehand). If all of this fails please open a [new issue](https://github.com/UnchartedBull/OctoDash/issues/new?assignees=UnchartedBull&labels=bug&template=bug_report.md&title=).
 
 ## Usage
 Any errors, that you may encounter during the usage of OctoDash.
