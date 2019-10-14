@@ -2,8 +2,6 @@ You can install OctoDash [automatic](#automatic-installation) with a script or [
 
 You need to enable automatic sign-in on boot in order for OctoDash to start automatically - [instructions](https://www.opentechguides.com/how-to/article/raspberry-pi/134/raspbian-jessie-autologin.html).
 
-If you can't connect a keyboard during the setup have a look at [xdotool](https://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/).
-
 ## Automatic Installation
 
 The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
@@ -75,6 +73,18 @@ fi
 
 
 If you get the `Cannot open virtual console 2 (Permission denied)` error run `sudo chmod ug+s /usr/lib/xorg/Xorg` and reboot.
+
+## Setup without Keyboard
+
+Don't have a keyboard connected to your Raspberry Pi? No problem.
+
+### Send Keyboard input to Pi via SSH
+You can use [xdotool](https://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/) to send keyboard input to the Pi via SSH. This is the recommended method, as your config will be validated by OctoDash and tested if the connection works.
+
+### Creating the config manually
+*You need to know what you are doing, if you face any errors please delete your config and try setting it up with xdotools*
+
+First you need to copy the `sample.config.json` from this repo to `.config/octodash/config.json` and then adjust to your needs. Most of the parameters should be pretty safe explanatory. If you have questions about variable types please have a look at [this file](https://github.com/UnchartedBull/OctoDash/blob/master/src/app/config/config.service.ts#L155). After a restart OctoDash should pick up to new config file and work normally (or show you an error message, which you need to fix ;))
 
 ## Website (deprecated)
 
