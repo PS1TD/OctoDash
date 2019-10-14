@@ -1,7 +1,5 @@
 You can install OctoDash [automatic](#automatic-installation) with a script or [manual](#manual-installation) if you don't trust the script (which is OpenSource and can be inspected in the `scripts` folder) or your setup differs from the normal Raspbian Installation. All scripts are written for the Raspberry Pi 2 (and higher). It is not recommended to install OctoDash on a Pi 1, because of the lack of power.
 
-You need to enable automatic sign-in on boot in order for OctoDash to start automatically - [instructions](https://www.opentechguides.com/how-to/article/raspberry-pi/134/raspbian-jessie-autologin.html).
-
 ## Automatic Installation
 
 The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
