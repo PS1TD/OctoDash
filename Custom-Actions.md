@@ -35,6 +35,9 @@ OctoDash supports 7 predefined actions, which aren't achievable with GCode. Plea
 - `"command": "[!SHUTDOWN]"` - Shuts down the Raspberry Pi
 - `"command": "[!REBOOT]"` - Reboots the Raspberry Pi
 - `"command": "[!KILL]"` - Nothing special yet, executes [!SHUTDOWN]
+- `"command": "[!POWEROFF]"` - Turn off the PSU (PSUControl required)
+- `"command": "[!POWERON]"` - Turn on the PSU (PSUControl required)
+- `"command": "[!POWERTOGGLE]"` - Toggle the PSU (PSUControl required)
 - `"command": "[!WEB]<website>"` - Opens the specified webpage in a fullscreen iFrame Window
 
 ```
