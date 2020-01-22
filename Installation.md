@@ -13,6 +13,9 @@ OctoPrint will install the following plugins by default:
 - [Enclosure](https://plugins.octoprint.org/plugins/enclosure/) - optional, supports display of a temperature at the bottom of the screen
 - [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) - optional, will greatly improve TimePredictions can be enabled via the `--ptg` flag
 
+### Autologin
+If you want OctoDash to show up directly on the screen after each boot, please make sure, that you enable Console Autologin with `sudo raspi-config`. This will grant access to everyone with physical access to the Raspberry Pi.
+
 ### With automatic start on boot
 
 *Note: If you already have a Desktop Environment installed (i.e. you have a desktop and not only a console on the screen), you may want to use the version without automatic start on boot, as this script will override your Window Manager.*
@@ -24,6 +27,7 @@ wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.s
 ```
 wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install-no-autostart.sh | bash -s -- --ptg
 ```
+
 ## Manual Installation
 You need to install the DisplayLayerProgress Plugin by OllisGit to enable the full functionality of OctoDash. The API is currently not in the final plugin, so please install the plugin with the following link: https://github.com/UnchartedBull/OctoPrint-DisplayLayerProgress/archive/master.zip.
 
