@@ -6,6 +6,7 @@ All known issues, that you may encounter are listed here, a fix, if present, wil
   - [wget: missing URL](#wget-missing-url)
   - [getting errors during installaion](#errors-during-installation)
   - [not starting automatically](#not-starting-automatically)
+  - [Cannot open virtual console 2](#cannot-open-virtual-console-2)
 - [Usage](#usage)
   - [Config is invalid](#config-is-invalid)
 
@@ -29,6 +30,12 @@ Please update your software to the newest version first and try reinstalling. If
 OctoDash is not starting automatically, even though you installed it via the normal script.
 #### Fix
 Make sure you are logged in (auto-login can be enabled with the [rasp-config](https://www.opentechguides.com/how-to/article/raspberry-pi/134/raspbian-jessie-autologin.html) tool. If that does not fix the issue make sure you can start OctoDash via the command `octodash` (you may need to execute `ratpoison` beforehand). If all of this fails please open a [new issue](https://github.com/UnchartedBull/OctoDash/issues/new?assignees=UnchartedBull&labels=bug&template=bug_report.md&title=).
+
+### cannot open virtual console 2
+#### Problem
+This issue comes up on some systems and prevents OctoDash from starting up correctly.
+#### Fix
+Fix the Xorg permission with `sudo chmod ug+s /usr/lib/xorg/Xorg` and restart your Raspberry
 
 ## Usage
 Any errors, that you may encounter during the usage of OctoDash.
