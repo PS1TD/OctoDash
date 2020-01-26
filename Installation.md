@@ -47,7 +47,7 @@ This is a super-minimal install to just display OctoDash on Raspbian LITE. Good 
 - Enable pi Console Autologin via  
 `sudo raspi-config`
 - Install xorg + ratpoison  
-`sudo apt install xserver-xorg --no-install-recommends ratpoison x11-xserver-utils xinit`
+`sudo apt install xserver-xorg ratpoison x11-xserver-utils xinit libgtk-3-0`
 - Create the .xinitrc file  
 `nano ~/.xinitrc`
 - Add the following contents:
