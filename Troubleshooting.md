@@ -68,7 +68,7 @@ If you're unsure about what the errors mean you can always just delete that file
 
 If you understand what needs to be changed in your config please go ahead and edit it with your favorite text editor. You can find the config at `~/.config/octodash/config.json`. 
 
-If you want more information about the config have a look [here](https://github.com/UnchartedBull/OctoDash/wiki/Config).
+If you want more information about the config / settings have a look [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup---Settings).
 
 ### OctoDash isn't waiting for my board to fully boot
 #### Problem
