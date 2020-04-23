@@ -1,0 +1,158 @@
+If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard at the [bottom](#setup-without-keyboard).
+
+## Inputs & Settings explained
+All the settings - briefly explained.
+
+#### OctoPrint URL
+The URL or IP where your OctoPrint installation is located. If you've installed OctoDash on the same device as OctoPrint you should use `localhost` or `127.0.0.1` here.
+
+default: `localhost`
+
+#### OctoPrint Port
+The port of your OctoPrint API. If you're using `localhost` or `127.0.0.1` you should use `5000` here. If you use the OctoPi image and have a different URL use `80`. Otherwise use the port of your forward proxy.
+
+default: `5000`
+
+#### API KEY
+The API Key for the OctoPrint API. Maybe also called Application Key or Access Token. Learn how to get one [here](https://octoclient.zendesk.com/hc/en-us/articles/360007208474-Where-to-Find-the-API-Key). **ONLY use the API Key here and nowhere else. If you share your config please remove the Access Token**
+
+default: ` `
+
+#### Printer Name
+The name of your printer, which will be displayed in the bottom left corner. Leave empty if you don't want to show a name.
+
+default: ` `
+
+#### Printer XY-Speed
+The speed in mm/s which will be used by OctoDash to move the X and Y-Axis in the control screen.
+
+default: `150`
+
+#### Printer Z-Speed
+The speed in mm/s which will be used by OctoDash to move the Z-Axis in the control screen.
+
+default: `5`
+
+#### Default Hotend Temperature
+The temperature in °C that will be used as the default for heating up the nozzle for changing the filament and if you click on the nozzle, while the printer is idling.
+
+default: `200`
+
+#### Default Heatbed Temperature
+The temperature in °C that will be used as the default if you click on the heatbed, while the printer is idling.
+
+default: `60`
+
+#### Default Fanspeed
+Fan speed in % that will be used as the default if you click on the fan, while the printer is idling.
+
+default: `100`
+
+#### Filament Thickness
+The thickness of the filament you're using in mm. Should be `1.75` or `3` in most cases. Will be used to calculate the filament amount.
+
+default: `1.75`
+
+#### Filament Density
+The average density of the filaments you're printing in g/cm³. Will be used to calculate the filament amount.
+
+default: `1.25`
+
+#### Feed Length
+The length of your feeding tube from the extruder to the hotend in mm. It will be used to unload and load the filament.
+
+default: `470`
+
+#### Feed Speed
+The speed in mm/s, which will be used while loading and unloading the filament.
+
+default: `100`
+
+#### Feed Speed Slow
+The speed in mm/s, which will be used to load the last 15% of the new filament.
+
+default: `15`
+
+#### Value Refresh Interval
+The interval which OctoDash waits between asking OctoPrint for new information in ms. Shouldn't be too short (< 1000ms) to prevent unnecessary load.
+
+default: `2000`
+
+#### Touchscreen
+Whether you're using a touchscreen or not. Based on this selection different screens will be loaded.
+
+default: `true`
+
+#### Turn Screen Off While Sleeping
+Turn the screen off after 5 minutes, if OctoDash is sleeping. Only working for displays that support dpms (i.e. official Raspberry Pi Display). The screen will turn back on, once touched.
+
+default: `false`
+
+#### Sort Files by
+The default attribute to sort files by (can always be temporarily changed in the file view, by clicking sort in the top right corner).
+
+default: `name`
+
+#### Sort Files order
+Whether to sort ascending or descending.
+
+default: `asc`
+
+#### Custom Actions
+Define up to 6 Custom Actions more info [here](https://github.com/UnchartedBull/OctoDash/wiki/Custom-Actions)
+
+#### Display Layer Progress enabled
+*Can't be changed at the moment*
+Whether the Display Layer Progress Plugin is installed and enabled.
+
+default: `true`
+
+#### Enclosure Plugin enabled
+Whether the Enclosure Plugin is installed and enabled.
+
+default: `false`
+
+#### Enclosure Plugin Ambient Sensor
+The id of the sensor, whose values should be used.
+
+default: ` `
+
+#### Filament Manager Plugin enabled
+Whether the Filament Manager Plugin is installed and enabled.
+
+default: `true`
+
+#### Preheat Button Plugin enabled
+Whether the Preheat Button Plugin is installed and enabled.
+
+default: `true`
+
+#### Print Time Genius Plugin enabled
+Whether the Print Time Genius Plugin is installed and enabled.
+
+default: `true`
+
+#### PSU Control Plugin enabled
+Whether the PSU Control Plugin is installed and enabled.
+
+default: `false`
+
+#### PSU Control Plugin Turn on PSU when exiting sleep
+Whether to send an on-signal to the PSU Control Plugin when OctoDash is exiting sleep mode.
+
+default: `false`
+
+## Settings file
+You can also edit these settings with your favorite code editor. The settings file is located at `~/.config/octodash/config.json`
+
+## Setup without Keyboard
+
+Don't have a keyboard connected to your Raspberry Pi? No problem.
+
+### Send Keyboard input to Pi via SSH
+You can use [xdotool](https://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/) to send keyboard input to the Pi via SSH. This is the recommended method, as your config will be validated by OctoDash and tested if the connection works.
+
+### Creating the config manually
+*You need to know what you are doing if you face any errors please delete your config and try setting it up with xdotools*
+
+Copy the `sample.config.json` from this repo to `.config/octodash/config.json` and then adjust the values to your needs. Most of the parameters should be pretty safe explanatory. If you have questions about variable types please have a look at [this file](https://github.com/UnchartedBull/OctoDash/blob/master/src/app/config/config.service.ts#L155). After a restart, OctoDash should pick up to new config file.
