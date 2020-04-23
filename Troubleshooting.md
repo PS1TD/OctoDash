@@ -7,7 +7,7 @@ Common issues, that you may encounter are listed here, a fix, if available, will
   - [getting errors during installaion](#errors-during-installation)
   - [not starting automatically](#not-starting-automatically)
   - [Cannot open virtual console 2](#cannot-open-virtual-console-2)
-  - [Cannot open display, Xinit failing, ...](#cannot-open-display-xinit-failing])
+  - [Cannot open display, Xinit failing, ...](#cannot-open-display-xinit-failing-)
 - [Setup](#setup)
   - [Host and Port](#host-and-port)
 - [Usage](#usage)
@@ -50,12 +50,12 @@ If you see something along the lines of `cannot open display` or `-bash xinit: c
 ## Setup
 Any errors, that you may encounter during the setup of OctoDash.
 
-### Host and Ports
+### Host and Port
 #### Problem
 If you're unsure what to enter in those fields or you're getting errors.
 
 #### Fix
-Always try `localhost` or `127.0.0.1` for the host and `5000` for the port if you're running OctoDash on the same machine as OctoPrint. For more information about those values visit the [setup guide]().
+Always try `localhost` or `127.0.0.1` for the host and `5000` for the port if you're running OctoDash on the same machine as OctoPrint. For more information about those values visit the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup---Settings).
 
 ## Usage
 Any errors, that you may encounter during the usage of OctoDash.
