@@ -55,7 +55,7 @@ Any errors, that you may encounter during the setup of OctoDash.
 If you're unsure what to enter in those fields or you're getting errors.
 
 #### Fix
-Always try `localhost` or `127.0.0.1` for the host and `5000` for the port if you're running OctoDash on the same machine as OctoPrint. For more information about those values visit the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup---Settings).
+Always try `localhost` or `127.0.0.1` for the host and `5000` for the port if you're running OctoDash on the same machine as OctoPrint. For more information about those values visit the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
 
 ## Usage
 Any errors, that you may encounter during the usage of OctoDash.
@@ -68,7 +68,7 @@ If you're unsure about what the errors mean you can always just delete that file
 
 If you understand what needs to be changed in your config please go ahead and edit it with your favorite text editor. You can find the config at `~/.config/octodash/config.json`. 
 
-If you want more information about the config / settings have a look [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup---Settings).
+If you want more information about the config / settings have a look [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
 
 ### OctoDash isn't waiting for my board to fully boot
 #### Problem
