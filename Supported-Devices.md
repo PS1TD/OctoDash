@@ -1,19 +1,22 @@
+*If you have a screen, or a System-on-a-Chip (SoC), that works great please let me know, so I can add them to this list*
+
 It is recommended to use a 5" or 7" display with a resolution of 800x480 px. You shouldn't choose a screen smaller than 3.5" and with a lower resolution than 480x320 px.
 
 The prebuilt electron app supports Raspberry Pi 2 and higher. The Raspberry Pi 1 is not supported and never will be supported. If you use a Pi 1 please use the Website Version or build the app yourself.
 
-All other SoCs that are using an armv7, or arm64 compatible, processer are supported as well.
+All other SoCs that are using an armv7, arm64, or amd64 compatible, processer are supported as well.
+
+## Recommended Board / SoC
+
+This is the same as for OctoPrint, I wouldn't recommend choosing anything lower than Pi 3 though. OctoDash will use some of the Pis resources, so be aware of that.
+
+SoCs from other vendors, such as PINE64 or OrangePi should work fine. Documentation and support are superior for the Raspberry Pi though, so I would go for the Pi personally.
 
 ## Recommended Screens
 
-Here are some screen, that should work fine with OctoDash, but you can, of course, choose whichever you like (even if it is not in the list). I'm not affiliated with any of these companies/marketplaces, it is where I buy my stuff and these are the screens I took into consideration, while buying my screen.
+Here are some screen, that should work fine with OctoDash, but you can, of course, choose whichever you like (even if it is not on the list). You may want to step away from the super cheap ($10) screens, that connect via GPIO. Those usually have a very low refresh rate and you will most likely see some stutters while using the UI. I'm not affiliated with any of these companies/marketplaces, it is where I buy my stuff and these are the screens I took into consideration while buying my screen.
 
-- [Raspberry Foundation 7" Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) - 7", 800x480, 60Hz, capacitive touch, ~$80 - works great, GPIOs are easily accessible
-- [WaveShare 5" Screen](https://www.waveshare.com/5inch-hdmi-lcd.htm) - 5", 800x480, 60Hz, resistive touch, ~$40 - quality 5 inch screen
-- [Generic 5" Screen](https://www.aliexpress.com/item/32993813607.html) - 5", 800x480, 60Hz, resistive touch, ~$40 - WaveShare knockoff, should work fine
-- [WaveShare 4.3" Screen](https://www.waveshare.com/4.3inch-hdmi-lcd-b.htm) - 4.3", 800x480, 60Hz, capacitive touch, ~$50 - IPS Panel supports wide viewing angle
-- [Generic 3.5" Screen](https://www.aliexpress.com/item/32587995145.html) - 3.5", 480x320, 1-2Hz, resistive touch, ~$10 - very cheap, I don't recommend it
-
-If you ask me for only one recommendation I'd probably recommend the cheap 5" screen, if you have any of these Chinese Kit Printers, because it keeps the spirit of being cheap, while working relatively good. If you have a more expensive printer, or view the display from multiple angles go for the 4.3" IPS Display. An ideal display probably would be a 5" IPS Touchscreen with capacitive touch, that connects via HDMI to the Pi. I haven't found one yet though.
-
-Development currently happens on the official 7" screen, but I'll probably switch to a 5" screen soon, because the 7" are a little too big for me.
+- [Raspberry Foundation 7" Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) - 7", 800x480, capacitive touch, ~$80
+- [WaveShare 5" Screen](https://www.waveshare.com/5inch-hdmi-lcd.htm) - 5", 800x480, resistive touch, ~$40
+- [Generic 5" Screen](https://www.aliexpress.com/item/32993813607.html) - 5", 800x480, resistive touch, ~$25
+- [WaveShare 4.3" Screen](https://www.waveshare.com/4.3inch-hdmi-lcd-b.htm) - 4.3", 800x480, capacitive touch, ~$50
