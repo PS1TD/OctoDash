@@ -1,4 +1,4 @@
-If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard at the [bottom](#setup-without-keyboard).
+If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard are at the [bottom](#setup-without-keyboard).
 
 ## Inputs & Settings explained
 All the settings - briefly explained.
