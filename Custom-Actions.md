@@ -1,5 +1,3 @@
-*This is an advanced option and configuration can only be done via SSH. There is currently no option to edit these settings within OctoDash. Please read the Wiki Page on how to manually adjust the config.*
-
 OctoDash allows you to define up to 6 custom actions, that can be executed from the control menu. You have full power over these buttons, OctoDash won't check, whether your commands make sense or if they might destroy your printer, it will send them to the printer, without any questions asked. So please be careful and do this at your own risk!
 
 ## Configuring Custom Actions
