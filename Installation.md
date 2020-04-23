@@ -16,24 +16,12 @@ wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.s
 wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install-no-autostart.sh | bash -s -- --ptg
 ```
 
-### Plugins
-*DisplayLayerProgress is mandatory and needs to be installed for OctoDash to work. There are plans to make this optional, but currently, you need to have it installed.*
-
-OctoPrint supports the following plugins:
-
-- [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) - mandatory
-- [Preheat Button](https://plugins.octoprint.org/plugins/preheat/) - adds a preheat button to OctoDash
-- [Enclosure](https://plugins.octoprint.org/plugins/enclosure/) - adds support for a temperature display at the bottom of the screen
-- [PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) - adds the option to turn on the printer if exiting from sleep mode
-- [UltimakerFormatPackage](https://plugins.octoprint.org/plugins/UltimakerFormatPackage/) - adds thumbnail images for .ufp files within OctoDash
-- [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) - will greatly improve print time predictions
-
 ### Autologin
 If you want OctoDash to show up directly on the screen after each boot, please make sure, that you enable Console Autologin with `sudo raspi-config`. **This will grant full access to everyone with physical access to the Raspberry Pi.**
 
 
 ## Manual Installation
-You need to manually install the DisplayLayerProgress Plugin by OllisGit via the OctoPrint UI to enable the full functionality of OctoDash. You can also install the optional plugins listed [here](#pluings).
+You need to manually install the DisplayLayerProgress Plugin by OllisGit via the OctoPrint UI to enable the full functionality of OctoDash. You can also install other, optional plugins listed [here](https://github.com/UnchartedBull/OctoDash/wiki/Plugins).
 
 ### Download and Install OctoDash
 
@@ -76,18 +64,6 @@ This is a minimal install to just display OctoDash on Raspbian LITE. It keeps th
   fi
   ```
 - reboot
-
-## Setup without Keyboard
-
-Don't have a keyboard connected to your Raspberry Pi? No problem.
-
-### Send Keyboard input to Pi via SSH
-You can use [xdotool](https://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/) to send keyboard input to the Pi via SSH. This is the recommended method, as your config will be validated by OctoDash and tested if the connection works.
-
-### Creating the config manually
-*You need to know what you are doing if you face any errors please delete your config and try setting it up with xdotools*
-
-First, you need to copy the `sample.config.json` from this repo to `.config/octodash/config.json` and then adjust to your needs. Most of the parameters should be pretty safe explanatory. If you have questions about variable types please have a look at [this file](https://github.com/UnchartedBull/OctoDash/blob/master/src/app/config/config.service.ts#L155). After a restart, OctoDash should pick up to new config file and work normally (or show you an error message, which you need to fix ;))
 
 ## Website (deprecated)
 
