@@ -4,7 +4,7 @@ You can install OctoDash [automaticly](#automatic-installation) with a script or
 
 The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
 
-If you have questions during the initial setup - please consult the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings)
+If you have questions during the initial setup - please consult the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
 
 ### With automatic start on boot
 
