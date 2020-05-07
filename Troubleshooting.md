@@ -46,6 +46,13 @@ Fix the Xorg permission with `sudo chmod ug+s /usr/lib/xorg/Xorg` and restart yo
 You ran the installing script and restarted your Pi, but rather than seeing OcotDash you're just getting some error messages. 
 #### Fix
 If you see something along the lines of `cannot open display` or `-bash xinit: command not found` please make sure that you have installed the correct drivers for your display (these are **NOT** included with OctoDash) and run the install script again for good measure.
+If you are sure, that you have the correct drivers installed here are some other things to try (make sure to reboot after each step to see if it is working):
+- Double Check that B2 is selected for the Boot Options in `raspi-config`
+- Try reconfiguring your x11 server: `sudo dpkg-reconfigure x11-common`
+- Install additional packages, which my be needed for OctoPi distrobutions: `sudo apt install libpam0g-dev libx11-dev`
+- Install even more packages: `sudo apt install raspberrypi-ui-mods` (please try the above first)
+- Allow any user to use xinit: [Stackexchange](https://unix.stackexchange.com/questions/478742/error-when-trying-to-use-xorg-only-console-users-are-allowed-to-run-the-x-serve/529945#529945)
+- Install Desktop Environment: `sudo /home/pi/scripts/install-desktop`
 
 ## Setup
 Any errors, that you may encounter during the setup of OctoDash.
