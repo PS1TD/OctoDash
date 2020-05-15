@@ -43,13 +43,14 @@ Fix the Xorg permission with `sudo chmod ug+s /usr/lib/xorg/Xorg` and restart yo
 
 ### Cannot open display, Xinit failing, ...
 #### Problem
-You ran the installing script and restarted your Pi, but rather than seeing OcotDash you're just getting some error messages or just a blinking cursor at the very top of your screen. This in many cases is a problem with the display setup and occurs with some of the displays. There are multiple (closed) issues to also look at. I tried to gather the things that worked in the past.
+You ran the installing script and restarted your Pi, but rather than seeing OcotDash you're just getting some error messages or just a blinking cursor at the very top of your screen. 
 #### Fix
-If you see something along the lines of `cannot open display` or `-bash xinit: command not found` please make sure that you have installed the correct drivers for your display (these are **NOT** included with OctoDash) and run the install script again for good measure.
+This in many cases is a problem with the display setup and occurs with some of the displays. There are multiple (closed) issues to also look at.
+First thing to do is to check, whether you installed the drivers for your display (these are **NOT** included with OctoDash) and run the install script again for good measure. 
 If you are sure, that you have the correct drivers installed here are some other things to try (make sure to reboot after each step to see if it is working):
 - Double Check that B2 is selected for the Boot Options in `raspi-config`
 - Connect a display via HDMI to see if OctoDash is available on the screen connected via HDMI
-- If you got a guide from your seller instructing you to change some things (i.e. via `raspi-config`) - try just installing the drivers and do not do any of the steps following the installation listed in the guide.
+- If you got a guide from your seller instructing you to change some settings (i.e. via `raspi-config`) - try just installing the driver without doing any of the subsequent steps listed in the guide.
 - Try reconfiguring your x11 server: `sudo dpkg-reconfigure x11-common`
 - Install additional packages, which my be needed for OctoPi distrobutions: `sudo apt install libpam0g-dev libx11-dev`
 - Install even more packages: `sudo apt install raspberrypi-ui-mods` (please try the above first)
