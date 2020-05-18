@@ -48,6 +48,31 @@ Fan speed in % that will be used as the default if you click on the fan, while t
 
 default: `100`
 
+#### Use M600 to change Filament
+When this is enabled OctoDash won't extrude any Filament, but rather will send the M600 command to the printer after heating up the nozzle. This then allows to use the printers filament change process.
+
+default: `false`
+
+#### Feed Length
+The distance the filament needs to travel between the Extruder and the Hotend. This will be used for the Filament Change Process. Make sure to set this fairly accurate. For a standard Ender-3 Pro this 440mm works great. This value should be really short for direct drive extruders.
+
+default: `0`
+
+#### Purge Distance
+The amount of filament that should be pushed through the nozzle to clean out the old filament.
+
+default: `30`
+
+#### Feed Speed
+The speed that should be used to unload, and load the first 75% of the Filament. Make sure to also set this in OctoPrint, as otherwise OctoPrint might slow down the Extruder Movement.
+
+default: `30`
+
+#### Feed Speed Slow
+The speed that should be used to load the last 20% of the Filament.
+
+default: `3`
+
 #### Filament Thickness
 The thickness of the filament you're using in mm. Should be `1.75` or `3` in most cases. Will be used to calculate the filament amount.
 
