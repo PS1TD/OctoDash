@@ -18,5 +18,6 @@ Here are some screen, that should work fine with OctoDash, but you can, of cours
 
 - [Raspberry Foundation 7" Screen](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) - 7", 800x480, capacitive touch, ~$80
 - [WaveShare 5" Screen](https://www.waveshare.com/5inch-hdmi-lcd.htm) - 5", 800x480, resistive touch, ~$40
+- [OSOYOO 5" DSI Screen](https://osoyoo.com/2019/09/20/instruction-for-raspberry-pi-5-dsi-touch-screen/) - 5", 800x480, capacitive touch, ~$45
 - [Generic 5" Screen](https://www.aliexpress.com/item/32993813607.html) - 5", 800x480, resistive touch, ~$25
 - [WaveShare 4.3" Screen](https://www.waveshare.com/4.3inch-hdmi-lcd-b.htm) - 4.3", 800x480, capacitive touch, ~$50
