@@ -1,21 +1,13 @@
-You can install OctoDash [automaticly](#automatic-installation) with a script or [manually](#manual-installation) if you don't trust the script (which is open source and can be inspected in the `scripts` folder). If your setup differs from the normal Raspbian / OctoPi Installation you may want to go the manual way as well.
+You can install OctoDash [automaticly](#automatic-installation) with the provided script or [manually](#manual-installation), if you don't trust the script (which is open source and can be inspected in the (here)[https://github.com/UnchartedBull/OctoDash/blob/feature/update-installation-script/scripts/install.sh]). If your setup differs from the normal Raspbian / OctoPi Installation it is preferred to do the manual installation.
 
 ## Automatic Installation
 
-The automatic scripts are meant to be run on Raspbian with OctoPrint located at the default location (`~/OctoPrint`) and the virtual environment named `venv`. If you use the OctoPi image you're good to go!
-
 If you have questions during the initial setup - please consult the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
 
-### With automatic start on boot
+*If you want the automatic start to work make sure to setup Autologin (described in the next section)*
 
-*Note: If you already have a Desktop Environment installed (i.e. you have a desktop and not only a console on the screen), you may want to use the version without automatic start on boot, as this script will override your Window Manager.*
 ```
-wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.sh | bash -s -- --ptg
-```
-
-### Without automatic start on boot
-```
-wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install-no-autostart.sh | bash -s -- --ptg
+bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.sh)
 ```
 
 ### Autologin
