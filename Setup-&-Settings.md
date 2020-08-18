@@ -1,5 +1,10 @@
 If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard are at the [bottom](#setup-without-keyboard).
 
+## Restarting OctoDash without restarting the Raspberry Pi
+If you want to quickly restart OctoDash you can just execute the following commands to do exactly that without the need to restart the whole Raspberry Pi:
+- `service getty@tty1 stop`
+- `service getty@tty1 start`
+
 ## Inputs & Settings explained
 All the settings - briefly explained.
 
