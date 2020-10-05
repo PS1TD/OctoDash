@@ -6,7 +6,7 @@ If you want to quickly restart OctoDash you can just execute the following comma
 - `service getty@tty1 start`
 
 ## Inputs & Settings explained
-All the settings - briefly explained.
+All the settings - briefly explained. Settings marked with *no-ui* cannot be changed via the UI, thus need to be edited by modifying `.config/octodash/config.json`.
 
 #### OctoPrint URL
 The URL or IP where your OctoPrint installation is located. If you've installed OctoDash on the same device as OctoPrint you should use `localhost` or `127.0.0.1` here.
@@ -20,6 +20,8 @@ default: `5000`
 
 #### API KEY
 The API Key for the OctoPrint API. Maybe also called Application Key or Access Token. Learn how to get one [here](https://octoclient.zendesk.com/hc/en-us/articles/360007208474-Where-to-Find-the-API-Key). **ONLY use the API Key here and nowhere else. If you share your config please remove the Access Token**
+
+*no-ui*
 
 default: ` `
 
@@ -103,14 +105,22 @@ The speed in mm/s, which will be used to load the last 15% of the new filament.
 
 default: `15`
 
+#### Z-Step G-CODE
+The command that is used to for babystepping Z. The value will be appended to the end of the command - so `M290 Z` will result in `M290 Z0.01`.
+
+*no-ui*
+default: 'M290 Z'
+
 #### Value Refresh Interval
 The interval which OctoDash waits between asking OctoPrint for new information in ms. Shouldn't be too short (< 1000ms) to prevent unnecessary load.
 
+*no-ui*
 default: `2000`
 
 #### Touchscreen
 Whether you're using a touchscreen or not. Based on this selection different screens will be loaded.
 
+*no-ui*
 default: `true`
 
 #### Turn Screen Off While Sleeping
