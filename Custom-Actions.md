@@ -37,7 +37,7 @@ OctoDash supports 7 predefined actions, which aren't achievable with GCode. Plea
 - `"command": "[!POWERON]"` - Turn on the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
 - `"command": "[!POWERTOGGLE]"` - Toggle the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
 - `"command": "[!WEB]<website>"` - Opens the specified webpage in a fullscreen iFrame Window
-
+- `"command": "[!NEOPIXEL]<identifier>,<red>,<green>,<blue>"` - Sets the LED strip to the specified color via the Enclosure Plugin. Make sure to include the `,`
 ```
 ...
 "command": "[!RELOAD]",
