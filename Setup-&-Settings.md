@@ -70,6 +70,11 @@ The amount of filament that should be pushed through the nozzle to clean out the
 
 default: `30`
 
+#### Feed Length
+The length of your feeding tube from the extruder to the hotend in mm. It will be used to unload and load the filament.
+
+default: `470`
+
 #### Feed Speed
 The speed that should be used to unload, and load the first 75% of the Filament. Make sure to also set a higher or equal max axis speed in OctoPrint, as otherwise OctoPrint might slow down the Extruder Movement.
 
@@ -89,21 +94,6 @@ default: `1.75`
 The average density of the filaments you're printing in g/cm³. Will be used to calculate the filament amount.
 
 default: `1.25`
-
-#### Feed Length
-The length of your feeding tube from the extruder to the hotend in mm. It will be used to unload and load the filament.
-
-default: `470`
-
-#### Feed Speed
-The speed in mm/s, which will be used while loading and unloading the filament.
-
-default: `100`
-
-#### Feed Speed Slow
-The speed in mm/s, which will be used to load the last 15% of the new filament.
-
-default: `15`
 
 #### Z-Step G-CODE
 The command that is used to for babystepping Z. The value will be appended to the end of the command - so `M290 Z` will result in `M290 Z0.01`.
