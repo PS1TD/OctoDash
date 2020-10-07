@@ -13,6 +13,8 @@ Common issues, that you may encounter are listed here, a fix, if available, will
 - [Usage](#usage)
   - [Config is invalid](#config-is-invalid)
   - [OctoDash isn't waiting for my board to fully boot](#octodash-isnt-waiting-for-my-board-to-fully-boot)
+  - [Filament Change is slower than specified in configuration
+](https://github.com/UnchartedBull/OctoDash/wiki/Troubleshooting#filament-change-is-slower-than-specified-in-configuration)
 
 ## Installation
 Any errors, that you may encounter during the installation of OctoDash.
