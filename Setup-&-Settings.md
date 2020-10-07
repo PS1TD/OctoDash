@@ -71,7 +71,7 @@ The amount of filament that should be pushed through the nozzle to clean out the
 default: `30`
 
 #### Feed Speed
-The speed that should be used to unload, and load the first 75% of the Filament. Make sure to also set this in OctoPrint, as otherwise OctoPrint might slow down the Extruder Movement.
+The speed that should be used to unload, and load the first 75% of the Filament. Make sure to also set a higher or equal max axis speed in OctoPrint, as otherwise OctoPrint might slow down the Extruder Movement.
 
 default: `30`
 
