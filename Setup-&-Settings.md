@@ -60,19 +60,14 @@ When this is enabled OctoDash won't extrude any Filament, but rather will send t
 
 default: `false`
 
-#### Feed Length
-The distance the filament needs to travel between the Extruder and the Hotend. This will be used for the Filament Change Process. Make sure to set this fairly accurate. For a standard Ender-3 Pro this 440mm works great. This value should be really short for direct drive extruders.
-
-default: `0`
-
 #### Purge Distance
 The amount of filament that should be pushed through the nozzle to clean out the old filament.
 
 default: `30`
-
 #### Feed Length
-The length of your feeding tube from the extruder to the hotend in mm. It will be used to unload and load the filament.
+The distance the filament needs to travel between the Extruder and the Hotend. This will be used for the Filament Change Process. Make sure to set this fairly accurate (± 10mm). For a standard Ender-3 Pro this 440mm works great. This value should be fairly short for direct drive extruders. If you're unsure about your measurement, it is better to start with a smaller than measured value and slowly increase until enough filament is retracted / extruded.
 
+default: `0`
 default: `470`
 
 #### Feed Speed
