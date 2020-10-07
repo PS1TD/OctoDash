@@ -85,3 +85,9 @@ If you want more information about the config / settings have a look [here](http
 This issue can occur if your board is taking to long to boot up. OctoDash will try to connect 3 times in the time span of 15 seconds, which might not be enough for some boards to boot up.
 #### Fix
 Please try the fork of [OctoPrint PortLister](https://github.com/mikekscholz/OctoPrint-PortLister) by [@mikekschloz](https://github.com/mikekscholz).
+
+### Filament Change is slower than specified in configuration
+#### Problem
+Even though the feed speed is setup correctly in OctoDash, the speed at which filament is retracted / extruded does not change during the filament change process
+#### Fix
+OctoPrint defines a maximum speed for each axis, which will overwrite the speed of any axis command with a higher speed. Please make sure to update your Printer Profile accordingly to your OctoDash configuration.
