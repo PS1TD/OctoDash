@@ -15,6 +15,7 @@ Common issues, that you may encounter are listed here, a fix, if available, will
   - [OctoDash isn't waiting for my board to fully boot](#octodash-isnt-waiting-for-my-board-to-fully-boot)
   - [Filament Change is slower than specified in configuration
 ](https://github.com/UnchartedBull/OctoDash/wiki/Troubleshooting#filament-change-is-slower-than-specified-in-configuration)
+  - [Preheat button isn't working once preview images are enabled](#preheat-button-isnt-working-once-preview-images-are-enabled)
 
 ## Installation
 Any errors, that you may encounter during the installation of OctoDash.
@@ -93,3 +94,9 @@ Please try the fork of [OctoPrint PortLister](https://github.com/mikekscholz/Oct
 Even though the feed speed is setup correctly in OctoDash, the speed at which filament is retracted / extruded does not change during the filament change process
 #### Fix
 OctoPrint defines a maximum speed for each axis, which will overwrite the speed of any axis command with a higher speed. Please make sure to update your Printer Profile accordingly to your OctoDash configuration.
+
+### Preheat button isn't working once preview images are enabled
+#### Problem
+You're getting a 405 error if you touch the preheat button on OctoDash, the button in the UI doesn't work too.
+#### Fix
+Increase "Max number of lines to look for preheat commands" in the settings of the preheat plugin. The preview images added to the top of the GCode file might push the actual temperature data behind the 1000th line. I would recommend increasing this number in 100 steps until it works. Alternatively you can change the size of your preview images - 16x16, 320x320 works fine with the default setting of 1000 lines.
