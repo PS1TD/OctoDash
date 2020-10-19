@@ -59,6 +59,26 @@ This is a minimal install to just display OctoDash on Raspbian LITE. It keeps th
   ```
 - reboot
 
+### Update Script
+
+If you want to use the built-in update functionality you need to create the update script and set the correct permissions.
+
+- Create the file `~/scripts/update.sh`  
+`nano ~/scripts/update.sh`
+  - and paste this  
+  ```
+  #!/bin/bash
+  dpkg -i /tmp/octodash.deb
+  rm /tmp/octodash.deb
+  ```
+- Make the script executable  
+`sudo chmod +x ~/scripts/update-octodash`
+- Allow this file sudo access without password for user pi (if you use a different use, substitute pi with your username)  
+`sudo nano /etc/sudoers.d/update-octodash`
+  - and paste this  
+  ```
+  pi ALL=NOPASSWD: /home/pi/scripts/update-octodash
+  ```
 ## Website (deprecated)
 
 The OctoDash Website Support was dropped in v1.1.0. It is still possible, you need to figure out some things yourself, though. The app will automatically detect a normal Browser Environment and will try to load `assets/config.json`.  
