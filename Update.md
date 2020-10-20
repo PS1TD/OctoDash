@@ -18,7 +18,8 @@ Manual Setup:
 dpkg -i /tmp/octodash.deb
 rm /tmp/octodash.deb
 ```
-
+- Make the script executable:  
+`sudo chmod +x ~/scripts/update-octodash`
 - Enable passwordless sudo for the update script (`/etc/sudoers.d/update-octodash`):
 ```
 pi ALL=NOPASSWD: /home/pi/scripts/update-octodash
