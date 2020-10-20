@@ -63,8 +63,8 @@ This is a minimal install to just display OctoDash on Raspbian LITE. It keeps th
 
 If you want to use the built-in update functionality you need to create the update script and set the correct permissions.
 
-- Create the file `~/scripts/update.sh`  
-`nano ~/scripts/update.sh`
+- Create the file `~/scripts/update-octodash`  
+`nano ~/scripts/update-octodash`
   - and paste this  
   ```
   #!/bin/bash
