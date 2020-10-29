@@ -175,7 +175,11 @@ You can also edit these settings with your favorite code editor. The settings fi
 Don't have a keyboard connected to your Raspberry Pi? No problem.
 
 ### Send Keyboard input to Pi via SSH
-You can use [xdotool](https://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/) to send keyboard input to the Pi via SSH. This is the recommended method, as your config will be validated by OctoDash and tested if the connection works.
+You can use [xdotool](https://www.semicomplete.com/projects/xdotool/) to send keyboard input to the Pi via SSH. This is the recommended method, as your config will be validated by OctoDash and tested if the connection works.
+
+#### xdotools commands
+- send text input: `xdotool type "<text>"`
+- click somewhere: `xdotool mousemove <x> <y> click 1 `
 
 #### Click locations
 Here are all the locations of the different buttons & checkboxes. You can use those to do the whole setup via xdotools: `xdotool mousemove x,y click 1`, just replace x and y with the values for your screen size.
