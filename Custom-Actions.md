@@ -1,6 +1,11 @@
-OctoDash allows you to define up to 6 custom actions, that can be executed from the control menu. You have full power over these buttons, OctoDash won't check, whether your commands make sense or if they might destroy your printer, it will send them to the printer, without any questions asked. So please be careful and do this at your own risk!
+OctoDash allows you to define custom actions, that can be executed from the control menu. You have full power over these buttons, OctoDash won't check, whether your commands make sense or if they might destroy your printer, it will send them to the printer, without any questions asked. So please be careful and do this at your own risk!
 
 ## Configuring Custom Actions
+You can configure six actions from the settings UI. 
+
+From v2.1.2 on OctoDash supports an unlimited amount of Custom Actions. Just add more by adding them to the `config.json` file (more info [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#creating-the-config-manually)). Please make sure that the file is still a valid JSON after your changes, you can easily check that with a tool like [JSONLint](https://jsonlint.com/). 
+
+If you have more than six actions defined the Custom Actions bar will be scrollable with the usual hold and drag functionality (there will be no scrollbar visible).
 
 ```
 "customActions": 
