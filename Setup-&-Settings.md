@@ -1,7 +1,7 @@
 If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard are at the [bottom](#setup-without-keyboard).
 
 ## Manually adjusting the settings
-The settings file can be found at `.config/octodash/config.json`. Please make sure that the file is valid JSON file, otherwise OctoDash won't accept it.
+The settings file can be found at `.config/octodash/config.json`. Please make sure that the file is still a valid JSON after your changes, you can easily check that with a tool like [JSONLint](https://jsonlint.com/).
 
 ## Restarting OctoDash without restarting the Raspberry Pi
 If you want to quickly restart OctoDash you can just execute the following commands to do exactly that without the need to restart the whole Raspberry Pi:
