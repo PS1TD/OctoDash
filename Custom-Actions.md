@@ -3,7 +3,7 @@ OctoDash allows you to define custom actions, that can be executed from the cont
 ## Configuring Custom Actions
 You can configure six actions from the settings UI. 
 
-From v2.1.2 on OctoDash supports an unlimited amount of Custom Actions. Just add more by adding them to the `config.json` file (more info [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#manually-adjusting-the-settings). Please make sure that the file is still a valid JSON after your changes, you can easily check that with a tool like [JSONLint](https://jsonlint.com/). 
+From v2.1.2 on OctoDash supports an unlimited amount of Custom Actions. Just add more by adding them to the `config.json` file (more info [here](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#manually-adjusting-the-settings)). Please make sure that the file is still a valid JSON after your changes, you can easily check that with a tool like [JSONLint](https://jsonlint.com/). 
 
 If you have more than six actions defined the Custom Actions bar will be scrollable with the usual hold and drag functionality (there will be no scrollbar visible).
 
