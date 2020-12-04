@@ -11,8 +11,17 @@ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/in
 ```
 
 ### Autologin
-If you want OctoDash to show up directly on the screen after each boot, please make sure, that you enable Console Autologin with `sudo raspi-config`. **This will grant full access to everyone with physical access to the Raspberry Pi.**
+If you want OctoDash to show up directly on the screen after each boot, please make sure, that you enable Console Autologin with `sudo raspi-config` like so:
 
+For newer Raspbian / OctoPi installations you need to select the following:
+- `1 System Options` -> `S5 Boot / Auto Login` -> `B2 Console Autologin`
+
+For older systems you need to select Console Autologin like this:
+- `3 Boot Options` -> `B2 Console Autologin`
+
+Finally select `<Finish>` and `<Yes>` if asked to reboot
+
+**This will grant full access to everyone with physical access to the Raspberry Pi.**
 
 ## Manual Installation
 You need to manually install the DisplayLayerProgress Plugin by OllisGit via the OctoPrint UI to enable the full functionality of OctoDash. You can also install other, optional plugins listed [here](https://github.com/UnchartedBull/OctoDash/wiki/Plugins).
