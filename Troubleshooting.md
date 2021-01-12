@@ -16,7 +16,7 @@ Common issues, that you may encounter are listed here, a fix, if available, will
   - [Filament Change is slower than specified in configuration
 ](https://github.com/UnchartedBull/OctoDash/wiki/Troubleshooting#filament-change-is-slower-than-specified-in-configuration)
   - [Preheat button isn't working once preview images are enabled](#preheat-button-isnt-working-once-preview-images-are-enabled)
-  - [Can't get OctoPrint script](#cant-get-octoprint-script)
+  - [My screen doesn't turn off / on while sleeping](#my-screen-doesnt-turn-off--on-while-octodash-is-sleeping)
 
 ## Installation
 Any errors, that you may encounter during the installation of OctoDash.
@@ -102,12 +102,8 @@ You're getting a 405 error if you touch the preheat button on OctoDash, the butt
 #### Fix
 Increase "Max number of lines to look for preheat commands" in the settings of the preheat plugin. The preview images added to the top of the GCode file might push the actual temperature data behind the 1000th line. I would recommend increasing this number in 100 steps until it works. Alternatively you can change the size of your preview images - 16x16, 320x320 works fine with the default setting of 1000 lines.
 
-### Can't get OctoPrint script
+### My screen doesn't turn off / on while OctoDash is sleeping
 #### Problem
-You're getting an error message during startup, telling you that the OctoPrint script couldn't be loaded.
+You're screen isn't turning off after 5 minutes in sleep mode, even though you have the option enabled in OctoDash.
 #### Fix
-First please check that you haven't disabled the packed client in your `config.yaml` - `devel - webassets - bundle` needs to be true (this is the default behaviour, if you haven't touched `config.yaml` or changed this value you should be good).
-
-Sometimes OctoPrint doesn't serve the script if your printer isn't connected. Please make sure that your printer is connected via the OctoPrint web interface and try again.
-
-Open `<printer:port>/static/webassets/packed_client.js` in your web browser. If you don't see a lot of code there is probably something wrong with your OctoPrint installation.
+Please adjust these two settings to match your screen: [Screen Sleep Command](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#screen-sleep-command) and [Screen Wakeup Command](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#screen-wakeup-command). Google is your best friend here.
