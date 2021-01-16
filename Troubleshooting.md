@@ -8,6 +8,7 @@ Common issues, that you may encounter are listed here, a fix, if available, will
   - [not starting automatically](#not-starting-automatically)
   - [Cannot open virtual console 2](#cannot-open-virtual-console-2)
   - [Cannot open display, Xinit failing, ...](#cannot-open-display-xinit-failing-)
+  - [Touchscreen is rotated (Adafruit displays)](#touchscreen-is-rotated-adafruit-displays)
 - [Setup](#setup)
   - [Host and Port](#host-and-port)
 - [Usage](#usage)
@@ -60,6 +61,13 @@ If you are sure, that you have the correct drivers installed here are some other
 - Install even more packages: `sudo apt install raspberrypi-ui-mods` (please try the above first)
 - Allow any user to use xinit: [Stackexchange](https://unix.stackexchange.com/questions/478742/error-when-trying-to-use-xorg-only-console-users-are-allowed-to-run-the-x-serve/529945#529945)
 - Install Desktop Environment: `sudo /home/pi/scripts/install-desktop`
+
+### Touchscreen is rotated (Adafruit displays)
+#### Problem
+Your touchscreen is flipped around 90° even though you set it up correctly during the installation. `ts_calibration` and `ts_test` also have the correct orientation, but OctoDash doesn't.
+
+#### Fix
+Install lightdm through apt, run the installer script again, and then remove lightdm. Reboot. Thanks to [@KTheMan](https://github.com/KTheMan)
 
 ## Setup
 Any errors, that you may encounter during the setup of OctoDash.
