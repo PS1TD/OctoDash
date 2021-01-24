@@ -7,7 +7,7 @@ If you have questions during the initial setup - please consult the [setup guide
 *If you want the automatic start to work make sure to setup Autologin (described in the next section)*
 
 ```
-bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.sh)
+bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/install.sh)
 ```
 
 ### Autologin
