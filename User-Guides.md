@@ -1,6 +1,8 @@
 This page contains guides submitted by users. I personally haven't tested those, but they should work.
 
 # UCTRONICS LCD35 SPI Install
+by [@theshortest](https://github.com/theshortest)
+
 
 ### Update and upgrade
 ```
