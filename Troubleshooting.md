@@ -11,6 +11,7 @@ Common issues, that you may encounter are listed here, a fix, if available, will
   - [Touchscreen is rotated (Adafruit displays)](#touchscreen-is-rotated-adafruit-displays)
 - [Setup](#setup)
   - [Host and Port](#host-and-port)
+  - [OctoDash can't connect to Octoprint (0 unknown)](#octodash-cant-connect-to-octoprint-0-unknown)
 - [Usage](#usage)
   - [Config is invalid](#config-is-invalid)
   - [OctoDash isn't waiting for my board to fully boot](#octodash-isnt-waiting-for-my-board-to-fully-boot)
@@ -78,6 +79,13 @@ If you're unsure what to enter in those fields or you're getting errors.
 
 #### Fix
 Always try `localhost` or `127.0.0.1` for the host and `5000` for the port if you're running OctoDash on the same machine as OctoPrint. For more information about those values visit the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
+
+### OctoDash can't connect to Octoprint (0 unknown)
+#### Problem
+OctoDash can't connect to OctoPrint and is showing an error card (0 unknown).
+
+#### Fix
+Double check that you've entered the correct IP and Port and that your Pi can access the IP. If you're sure that these are correct and work please try enabling "Allow Cross Origin Resource Sharing (CORS)" in the OctoPrint API settings (make sure to restart your Pi before trying again).
 
 ## Usage
 Any errors, that you may encounter during the usage of OctoDash.
