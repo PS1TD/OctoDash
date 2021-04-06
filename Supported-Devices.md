@@ -2,13 +2,13 @@
 
 It is recommended to use a 5" or 7" display with a resolution of 800x480 px. You shouldn't choose a screen smaller than 3.5" and with a lower resolution than 480x320 px.
 
-The prebuilt electron app supports Raspberry Pi 2 and higher. The Raspberry Pi 1 is not supported and never will be supported. If you use a Pi 1 please use the Website Version or build the app yourself.
+The prebuilt electron app supports Raspberry Pi 2 and higher. The Raspberry Pi 1 is not supported and never will be supported. If you use a Pi 1 please use the Website Version.
 
 All other SoCs that are using an armv7, arm64, or amd64 compatible, processer are supported as well.
 
 ## Recommended Board / SoC
 
-This is the same as for OctoPrint, I wouldn't recommend choosing anything lower than Pi 3 though. OctoDash will use some of the Pis resources, so be aware of that.
+This is the same as for OctoPrint, I wouldn't recommend choosing anything slower than Pi 3 though to ensure a smooth operation.
 
 SoCs from other vendors, such as PINE64 or OrangePi should work fine. Documentation and support are superior for the Raspberry Pi though, so I would go for the Pi personally.
 
