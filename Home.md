@@ -4,7 +4,9 @@ This wiki contains all information that you might need while setting up / workin
 
 ## Table of Contents
 
-- [Installation](./installation/Installation.md)
+- [Installation](./Installation)
+- [Update](./Update)
+- [Removal](./Removal)
 
 ## Contributing
 

@@ -1,4 +1,4 @@
-You can install OctoDash [automatically](#automatic-installation) with the provided script or [manually](#manual-installation), if you don't trust the script [source here](https://github.com/UnchartedBull/OctoDash/blob/feature/update-installation-script/scripts/install.sh). If your setup differs from the normal Raspbian / OctoPi Installation it is preferred to do the manual installation.
+You can install OctoDash [automatically](#automatic-installation) with the provided script or [manually](#manual-installation), if you don't trust the script [source here](https://github.com/UnchartedBull/OctoDash/blob/main/scripts/install.sh). If your setup differs from the normal Raspbian / OctoPi Installation it is preferred to do the manual installation.
 
 ## Automatic Installation
 
@@ -9,11 +9,11 @@ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/inst
 ```
 
 TODO
-If you have questions during the initial setup - please consult the [setup guide](https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings).
+If you have questions during the initial setup - please consult the [setup guide](./Setup-&-Settings).
 
 ## Manual Installation
 
-You need to manually install the DisplayLayerProgress Plugin by OllisGit via the OctoPrint UI to enable the full functionality of OctoDash. You can also install other, optional plugins listed [here](https://github.com/UnchartedBull/OctoDash/wiki/Plugins).
+You need to manually install the DisplayLayerProgress Plugin by OllisGit via the OctoPrint UI to enable the full functionality of OctoDash. You can also install other, optional plugins listed [here](./Plugins).
 
 ### Download and Install OctoDash
 
