@@ -7,6 +7,8 @@ This wiki contains all information that you might need while setting up / workin
 - [Installation](./Installation)
 - [Update](./Update)
 - [Removal](./Removal)
+- [System Requirements](./System-Requirements)
+  - [Recommended Screens](./Recommended-Screens)
 
 ## Contributing
 
