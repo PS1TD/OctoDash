@@ -3,5 +3,8 @@
 </p>
 
 - [Installation](./Installation)
+  - [Setup](./Setup)
 - [Update](./Update)
 - [Removal](./Removal)
+- [System Requirements](./System-Requirements)
+  - [Recommended Screens](./Recommended-Screens)

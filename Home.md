@@ -5,6 +5,7 @@ This wiki contains all information that you might need while setting up / workin
 ## Table of Contents
 
 - [Installation](./Installation)
+  - [Setup](./Setup)
 - [Update](./Update)
 - [Removal](./Removal)
 - [System Requirements](./System-Requirements)
