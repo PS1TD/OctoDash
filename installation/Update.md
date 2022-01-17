@@ -36,7 +36,7 @@ pi ALL=NOPASSWD: /home/pi/scripts/update-octodash
 The source for the script can be found [here](https://github.com/UnchartedBull/OctoDash/blob/main/scripts/update.sh)
 
 ```bash
-wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/update.sh | bash
+wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/update.sh | bash
 ```
 
 ## Manual Update
