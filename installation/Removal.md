@@ -7,7 +7,7 @@ You can either remove OctoDash with a [a script](#remove-with-script) or [manual
 The source for the script can be found [here](https://github.com/UnchartedBull/OctoDash/blob/main/scripts/remove.sh)
 
 ```bash
-wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/remove.sh | bash
+wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/remove.sh | bash
 ```
 
 ## Manual Removal
