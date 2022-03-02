@@ -6,7 +6,11 @@ DisplayLayerProgress is mandatory and needs to be installed for OctoDash to work
 
 ### [FilamentManager](https://plugins.octoprint.org/plugins/filamentmanager/)
 
-Allows OctoDash to directly change the filament, if the filament is changed. This will also add an additional screen to the Filament Change Screen to choose the new filament.
+Allows OctoDash to directly change the filament. This will also add an additional screen to the Filament Change Screen to choose the new filament.
+
+### [Spool Manager (beta)](https://plugins.octoprint.org/plugins/SpoolManager/)
+
+Allows OctoDash to directly change the filament. This will also add an additional screen to the Filament Change Screen to choose the new filament.
 
 ### [Preheat Button](https://plugins.octoprint.org/plugins/preheat/)
 
@@ -19,6 +23,22 @@ Adds support for a temperature display at the bottom of the main screen.
 ### [PSUControl](https://plugins.octoprint.org/plugins/psucontrol/)
 
 Adds the option to turn on the printer if exiting from sleep mode and some additional [Custom Actions](https://github.com/UnchartedBull/OctoDash/wiki/Custom-Actions).
+
+### [OctoPrint-TPLinkSmartplug](https://plugins.octoprint.org/plugins/tplinksmartplug/)
+
+Same as PSUControl, just for TPLink Smartplugs
+
+### [OctoPrint-Tasmota](https://plugins.octoprint.org/plugins/tasmota/)
+
+Same as PSUControl, just for Tasmota Devices
+
+### [Tasmota-MQTT](https://plugins.octoprint.org/plugins/tasmota_mqtt/)
+
+Same as PSUControl, just for Tasmota MQTT Devices
+
+### [Ophom](https://plugins.octoprint.org/plugins/ophom/)
+
+Same as PSUControl, just for Philips Devices
 
 ### [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/)
 

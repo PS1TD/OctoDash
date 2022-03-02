@@ -1,16 +1,3 @@
-If you have successfully installed OctoDash and need help during the initial setup or don't know what that one setting is. There are also instructions on how to setup OctoDash without a Keyboard are at the [bottom](#setup-without-keyboard).
-
-## Manually adjusting the settings
-
-The settings file can be found at `.config/octodash/config.json`. Please make sure that the file is still a valid JSON after your changes, you can easily check that with a tool like [JSONLint](https://jsonlint.com/).
-
-## Restarting OctoDash without restarting the Raspberry Pi
-
-If you want to quickly restart OctoDash you can just execute the following commands to do exactly that without the need to restart the whole Raspberry Pi:
-
-- `service getty@tty1 stop`
-- `service getty@tty1 start`
-
 ## Inputs & Settings explained
 
 All the settings - briefly explained. Settings marked with _no-ui_ cannot be changed via the UI, thus need to be edited by modifying `.config/octodash/config.json`.
@@ -33,13 +20,13 @@ The API Key for the OctoPrint API. Maybe also called Application Key or Access T
 
 _no-ui_
 
-default: ` `
+default: ``
 
 #### Printer Name
 
 The name of your printer, which will be displayed in the bottom left corner. Leave empty if you don't want to show a name.
 
-default: ` `
+default: ``
 
 #### Printer XY-Speed
 
@@ -187,7 +174,7 @@ default: `false`
 
 The id of the sensor, whose values should be used.
 
-default: ` `
+default: ``
 
 #### Filament Manager Plugin enabled
 
