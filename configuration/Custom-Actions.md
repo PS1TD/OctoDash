@@ -8,7 +8,7 @@ From v2.1.2 on OctoDash supports an unlimited amount of Custom Actions. Just add
 
 If you have more than six actions defined the Custom Actions bar will be scrollable with the usual hold and drag functionality (there will be no scrollbar visible).
 
-```json
+```
 "customActions":
 [{
     "icon": string,
@@ -24,7 +24,7 @@ You can change the [Icon](#icon), as well as the [Color](#color) of the box. Eac
 
 If you want to execute GCode just put the commands inside the `command` attribute of the JSON. If you want to execute multiple GCode commands separate them with `; ` (the space at the end is important). Any GCode that your printer accepts will work here.
 
-```json
+```
 ...
 "command": "M140 S50; M104 S185",
 ...
@@ -48,7 +48,7 @@ OctoDash supports a number of predefined actions, which aren't achievable with G
 - `"command": "[!OUTPUT]<identifier>,<status>"` - Sets the status of the specified output via the Enclosure Plugin (on / true turns output ON, off / false turns the output OFF). Make sure to include the `,`
 - `"command": "[!OUTPUT_PWM]<identifier>,<duty-cycle>"` - Sets the duty cycle of the specified output via the Enclosure Plugin . Make sure to include the `,`
 
-```json
+```
 ...
 "command": "[!RELOAD]",
 ...
@@ -62,7 +62,7 @@ OctoDash supports a number of predefined actions, which aren't achievable with G
 
 You can use any Icon of the [FontAwesome Free Solid Icon Collection](https://fontawesome.com/icons?d=gallery&s=solid&m=free). Don't prefix the icon, just paste in the name.
 
-```json
+```
 ...
 "icon": "print",
 ...
@@ -72,7 +72,7 @@ You can use any Icon of the [FontAwesome Free Solid Icon Collection](https://fon
 
 Any Hex Color will work here (please include the `#` upfront). If you want to use the same colors as the rest of the system check out the [FlatUI British Palette](https://flatuicolors.com/palette/gb). Most of the colors used across OctoDash come from that very same palette. However, feel free to experiment!
 
-```json
+```
 ...
 "color": "#f5f6fa",
 ...

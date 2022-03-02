@@ -1,5 +1,3 @@
-# UCTRONICS LCD35 SPI Install
-
 by [@theshortest](https://github.com/theshortest)
 
 ### Update and upgrade

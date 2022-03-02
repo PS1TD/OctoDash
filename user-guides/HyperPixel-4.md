@@ -1,5 +1,3 @@
-# HyperPixel 4.0
-
 by [@morphias2004](https://github.com/morphias2004)
 
 I loaded the latest OctoPi image, did the basic config on OctoPrint to get it on the network, ran apt update and upgrade, , ran all the updates on OctoPrint to bring it up to v1.6.1 and then ran:

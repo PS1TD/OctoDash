@@ -4,12 +4,24 @@ This wiki contains all information that you might need while setting up / workin
 
 ## Table of Contents
 
+- [Home](./Home)
 - [Installation](./Installation)
   - [Setup](./Setup)
 - [Update](./Update)
 - [Removal](./Removal)
 - [System Requirements](./System-Requirements)
   - [Recommended Screens](./Recommended-Screens)
+- [Troubleshooting](./Troubleshooting)
+- [Settings](./Settings)
+  - [Custom Actions](./Custom-Actions)
+  - [Custom Styles](./Custom-Styles)
+  - [Octoprint](./Octoprint)
+    - [Plugins](./Octoprint-Plugins)
+  - [Klipper](./Klipper)
+- [User Guides](./User-Guides)
+  - [UCTRONICS LCD35 SPI](./UCTRONICS-LCD35)
+  - [HyperPixel 4.0](./HyperPixel-4)
+  - [Rotating Display and Touchscreen](./Rotate-screen)
 
 ## Contributing
 

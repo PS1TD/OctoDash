@@ -1,5 +1,3 @@
-## Inputs & Settings explained
-
 All the settings - briefly explained. Settings marked with _no-ui_ cannot be changed via the UI, thus need to be edited by modifying `.config/octodash/config.json`.
 
 #### OctoPrint URL

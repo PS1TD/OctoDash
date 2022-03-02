@@ -1,5 +1,3 @@
-# Rotating Display & Touchscreen
-
 by [MrElie](https://github.com/MrElie) and [others](https://github.com/UnchartedBull/OctoDash/issues/928)
 
 1st u need to go to /boot and edit config.txt

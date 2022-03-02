@@ -17,6 +17,6 @@
     - [Plugins](./Octoprint-Plugins)
   - [Klipper](./Klipper)
 - [User Guides](./User-Guides)
-  - [UCTRONICS LCD35](./UCTRONICS-LCD35)
+  - [UCTRONICS LCD35 SPI](./UCTRONICS-LCD35)
   - [HyperPixel 4.0](./HyperPixel-4)
   - [Rotating Display and Touchscreen](./Rotate-screen)
