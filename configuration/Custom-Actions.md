@@ -34,19 +34,20 @@ If you want to execute GCode just put the commands inside the `command` attribut
 
 OctoDash supports a number of predefined actions, which aren't achievable with GCode. Please copy and paste the complete Action command attribute to prevent any spelling mistakes. The brackets and exclamation marks need to be copied as well. These commands will be executed even while you're printing and can cancel your print.
 
-- `"command": "[!STOPDASHBOARD]"` - Stops OctoDash and closes the window
-- `"command": "[!DISCONNECT]"` - Disconnects OctoPrint from the printer
-- `"command": "[!RELOAD]"` - Restarts OctoPrint
-- `"command": "[!SHUTDOWN]"` - Shuts down the Raspberry Pi
-- `"command": "[!REBOOT]"` - Reboots the Raspberry Pi
-- `"command": "[!KILL]"` - Nothing special yet, executes [!SHUTDOWN]
-- `"command": "[!POWEROFF]"` - Turn off the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
-- `"command": "[!POWERON]"` - Turn on the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
-- `"command": "[!POWERTOGGLE]"` - Toggle the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
-- `"command": "[!WEB]<website>"` - Opens the specified webpage in a fullscreen iFrame Window
-- `"command": "[!NEOPIXEL]<identifier>,<red>,<green>,<blue>"` - Sets the LED strip to the specified color via the Enclosure Plugin. Make sure to include the `,`
-- `"command": "[!OUTPUT]<identifier>,<status>"` - Sets the status of the specified output via the Enclosure Plugin (on / true turns output ON, off / false turns the output OFF). Make sure to include the `,`
-- `"command": "[!OUTPUT_PWM]<identifier>,<duty-cycle>"` - Sets the duty cycle of the specified output via the Enclosure Plugin . Make sure to include the `,`
+-   `"command": "[!STOPDASHBOARD]"` - Stops OctoDash and closes the window
+-   `"command": "[!DISCONNECT]"` - Disconnects OctoPrint from the printer
+-   `"command": "[!RELOAD]"` - Restarts OctoPrint
+-   `"command": "[!SHUTDOWN]"` - Shuts down the Raspberry Pi
+-   `"command": "[!REBOOT]"` - Reboots the Raspberry Pi
+-   `"command": "[!KILL]"` - Nothing special yet, executes [!SHUTDOWN]
+-   `"command": "[!POWEROFF]"` - Turn off the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
+-   `"command": "[!POWERON]"` - Turn on the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
+-   `"command": "[!POWERTOGGLE]"` - Toggle the PSU ([PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) required)
+-   `"command": "[!WEB]<website>"` - Opens the specified webpage in a fullscreen iFrame Window
+-   `"command": "[!NEOPIXEL]<identifier>,<red>,<green>,<blue>"` - Sets the LED strip to the specified color via the Enclosure Plugin. Make sure to include the `,`
+-   `"command": "[!OUTPUT]<identifier>,<status>"` - Sets the status of the specified output via the Enclosure Plugin (on / true turns output ON, off / false turns the output OFF). Make sure to include the `,`
+-   `"command": "[!OUTPUT_PWM]<identifier>,<duty-cycle>"` - Sets the duty cycle of the specified output via the Enclosure Plugin . Make sure to include the `,`
+-   `"command": "[!SHELL]<identifier>"` - Runs a shell script via the Enclosure Plugin.
 
 ```
 ...
